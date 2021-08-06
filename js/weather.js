@@ -20,7 +20,7 @@ function onGeoSuccess(position) {
 
 function onGeoError() {
     alert("Can't find you. No weather for you.");
-    city.innerHTML = "No sign.";
+    city.innerHTML = "No signal.";
     weather.innerHTML = "?";
 }
 
