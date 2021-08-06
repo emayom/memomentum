@@ -5,6 +5,6 @@ const random = Math.floor(Math.random() * imgages.length);
 const todaysImage = imgages[random];
 
 const bgImage = document.createElement("img");
-bgImage.src = `memomentum/img/${todaysImage}`;
+bgImage.src = `https://emayom.github.io/memomentum/img/${todaysImage}`;
 
 bg.appendChild(bgImage);
