@@ -1,0 +1,335 @@
+@import url(reset.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap');
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+html {
+    font-size: 16px;
+}
+
+#login_form input {
+    width: 18vw;
+    height: 5vh;
+    color: #fff;
+    text-align: left;
+    background: none;
+    padding: 1vw;
+    border: 0;
+    font-size: 2rem;
+    font-family: 'Cormorant Garamond', serif;
+    animation: fadeIn 2s;
+}
+
+
+#login_form input::placeholder {
+    color: #fff;
+    opacity: .7;
+}
+
+#login_btn {
+    width: 5vw;
+    height: 5vw;
+    opacity: .7;
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+#login_form button:hover {
+    border: 1px solid #fff;
+    border-radius: 100%;
+}
+
+#login_form:hover {
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+#login-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+    color: #fff;
+    font-family: 'Cormorant Garamond', serif;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    border: 0;
+    outline: none;
+    background: none;
+}
+
+
+/* header */
+
+header {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    opacity: .7;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+}
+
+.calendar {
+    border-bottom: 1px solid #fff;
+    padding: 10px;
+    margin: 35px;
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
+}
+
+#weather {
+    width: 16.5vw;
+    height: 3vw;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    animation: fadeIn 7s;
+}
+
+#weather img{
+    width: 1.5vw;
+    height: 1.5vw;
+}
+
+#weather #temperture {
+    font-family: 'Cormorant', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    width: 4vw;
+    height: 4vw;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-left: 1vw;
+}
+
+
+/* main */
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+#greeting {
+    text-align: center;
+    animation: fadeIn 3s;
+    color: #fff890;
+    letter-spacing: .2rem;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.time {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    font-family: 'Cormorant', serif;
+    font-size: 1.5rem;
+}
+
+#clock {
+    letter-spacing: .2rem;
+    font-size: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sec {
+    width: 2.5vw;
+    margin-left: 1vw;
+    text-align: center;
+    opacity: .8;
+}
+
+#secMark {
+    font-size: .7rem;
+    opacity: .8;
+}
+
+
+/* background */
+
+#background {
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+#background img {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.contents {
+    position: absolute;
+    bottom: 12.5%;
+    left: 0;
+    margin-left: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#todo_form {
+    font-family: 'Cormorant Garamond', serif;
+    width: calc(100vw - 70px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+#todo_form div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+
+#todo_form h3 {
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 1rem;
+    color: #fff;
+    font-size: 1.3rem;
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+
+
+#todo_input {
+    color: #fff;
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: .1rem;
+    font-size: 1rem;
+    border: 0;
+    padding: 1vw 1.5vh;
+    width: 380px;
+    box-sizing: border-box;
+    background: none;
+}
+
+input:focus {
+    outline-style: none;  
+}
+
+.contents input:hover {
+    outline: 1px solid rgba(255, 255, 255, 0.208);
+}
+
+#todo_input::placeholder {
+    opacity: .8;
+    font-size: 1.1rem;
+    font-family: 'Cormorant Garamond', serif;
+    color: #eeeeee;
+}
+
+#todo_list {
+    width: calc(100vw - 70px);
+    box-sizing: border-box;
+    height: 30vh;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2vw;
+    padding: 0px 3vw;
+    background-color: #c6c6c631;
+    backdrop-filter: blur( 1.5px );
+    overflow: scroll;
+}
+
+#todo_list li {
+    height: fit-content;
+    list-style-type: none;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5vw;
+    border-bottom: 1px dotted #d9d9d9c5;
+}
+
+
+/* quotes */
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: .8;
+    color: #fff;
+}
+
+#quotes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+}
+
+#quotes #quote {
+    opacity: .8;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    word-break: keep-all;
+}
+
+
+
+
+
