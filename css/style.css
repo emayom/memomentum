@@ -301,8 +301,9 @@ input:focus {
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
+    margin-top: 1rem;
     margin-bottom: 1.5vw;
-    border-bottom: 1px dotted #d9d9d9c5;
+    border-bottom: 1px dotted #d9d9d9c5;  
 }
 
 
