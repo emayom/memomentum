@@ -5,6 +5,6 @@ const random = Math.floor(Math.random() * imgages.length);
 const todaysImage = imgages[random];
 
 const bgImage = document.createElement("img");
-bgImage.src = `/img/${todaysImage}`;
+bgImage.src = `img/${todaysImage}`;
 
 bg.appendChild(bgImage);
