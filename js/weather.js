@@ -16,12 +16,12 @@ function onGeoSuccess(position) {
                 city.innerHTML = `${country},  ${data.sys.country}`;
                 weather.innerHTML = `${Math.floor(data.main.temp)}°C`;
               });
-
-            //   ${data.weather[0].main}
 }
 
 function onGeoError() {
-    alert("Can't find you. No weather for you.")
+    alert("Can't find you. No weather for you.");
+    city.innerHTML = "No sign.";
+    weather.innerHTML = "?";
 }
 
 navigator.geolocation.getCurrentPosition(onGeoSuccess, onGeoError);
