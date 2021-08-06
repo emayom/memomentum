@@ -14,9 +14,13 @@
 }
 
 
-
 html {
     font-size: 16px;
+}
+
+#login_form {
+    position: absolute;
+    top: 30%;
 }
 
 #login_form input {
